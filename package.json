@@ -1,0 +1,38 @@
+{
+  "name": "pixi_playground",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20.8.1"
+  },
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "build:dev": "tsc && vite build --mode development",
+    "preview": "vite preview --host --port 8080",
+    "lint": "npx eslint src scripts",
+    "lint:fix": "npx eslint src scripts --fix"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run lint"
+  },
+  "devDependencies": {
+    "@types/howler": "^2.2.11",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-plugin-unicorn": "^51.0.1",
+    "simple-git-hooks": "^2.10.0",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.6",
+    "vite-plugin-checker": "^0.6.4",
+    "xlsx": "^0.18.5"
+  },
+  "dependencies": {
+    "howler": "^2.2.4",
+    "pixi.js": "^8.0.2",
+    "tweedle.js": "^2.1.0"
+  }
+}
